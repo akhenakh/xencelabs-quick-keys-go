@@ -128,7 +128,7 @@ func cmdSetWheelSpeed(speed string) []byte {
 		val = 5
 	case "slower":
 		val = 4
-	case "normal"
+	case "normal":
 		val = 3
 	case "faster":
 		val = 2
