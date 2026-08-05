@@ -368,9 +368,13 @@ func refreshLayer(dev *hid.Device, layer Layer, globalSpeed string, showOverlay 
 
 	//  Show Overlay
 	if showOverlay {
+		// Firmware drops overlay reports while still rendering the key labels;
+		// wait for the label repaint to settle before sending the overlay.
+		time.Sleep(200 * time.Millisecond)
 		pkts := msgsShowOverlayText(1, layer.Name) // Show for x seconds
 		for _, p := range pkts {
 			dev.Write(p)
+			time.Sleep(10 * time.Millisecond)
 		}
 	}
 }

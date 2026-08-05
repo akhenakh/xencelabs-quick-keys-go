@@ -37,7 +37,7 @@ layers:
   - name: "DaVinci"
     # Red Ring for DaVinci
     color: { r: 255, g: 0, b: 0 }
-    wheel_speed: fast
+    wheel_speed: fastest
     buttons:
       0:
         label: "Split"

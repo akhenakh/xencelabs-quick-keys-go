@@ -97,4 +97,4 @@ Use standard Linux input event codes in `config.yaml`. Common examples:
 
 ## Known Bugs
 
-The overlay showing the current layer is not working.
+None currently known.
