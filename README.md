@@ -13,12 +13,8 @@ A lightweight, userland driver for the Xencelabs Quick Keys remote, written in G
 
 ## Prerequisites
 
-You need the C headers for USB and HID libraries to compile the project.
-
-**Debian/Ubuntu:**
-```bash
-sudo apt install libusb-1.0-0-dev libudev-dev pkg-config
-```
+Go 1.25+ and a C compiler. cgo builds the vendored HID/libusb sources, so no
+system USB or HID development packages are needed.
 
 ## Installation
 
