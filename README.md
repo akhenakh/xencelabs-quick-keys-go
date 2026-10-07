@@ -22,6 +22,15 @@ sudo apt install libusb-1.0-0-dev libudev-dev pkg-config
 
 ## Installation
 
+On Arch Linux and derivatives, the driver is packaged in the
+[AUR](https://aur.archlinux.org/packages/xencelabs-quick-keys-go):
+
+```sh
+paru -S xencelabs-quick-keys-go
+```
+
+Otherwise, build from source.
+
 1. **Clone the repository** (or create the files):
    ```bash
    go build .
