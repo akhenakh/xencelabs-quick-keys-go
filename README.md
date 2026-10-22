@@ -99,6 +99,8 @@ Use standard Linux input event codes in `config.yaml`. Common examples:
 - `KEY_UP`, `KEY_DOWN`, `KEY_LEFT`, `KEY_RIGHT`
 - `KEY_PAGEUP`, `KEY_PAGEDOWN`, `KEY_HOME`, `KEY_END`
 - `KEY_VOLUMEDOWN`, `KEY_VOLUMEUP`, `KEY_MUTE`
+- `KEY_KPPLUS`, `KEY_KPMINUS`, `KEY_DELETE`
+- `WHEEL_UP`, `WHEEL_DOWN`: a mouse-wheel step from a virtual mouse. Combine with a modifier, e.g. `["KEY_LEFTCTRL", "WHEEL_UP"]` for Ctrl+scroll zoom.
 
 ## Known Bugs
 
